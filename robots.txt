@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://modelosdecurriculo.online/sitemap.xml
