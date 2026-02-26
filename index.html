@@ -437,6 +437,19 @@ Comprar Agora
 <a href="#">Ler artigo →</a>
 </article>
 
+<!-- Novos artigos -->
+<article class="post">
+<h3>Currículo para jovem aprendiz</h3>
+<p>Modelo e dicas para candidatos iniciantes.</p>
+<a href="#">Ler artigo →</a>
+</article>
+
+<article class="post">
+<h3>Como montar currículo pelo celular</h3>
+<p>Passo a passo para criar seu currículo rápido.</p>
+<a href="#">Ler artigo →</a>
+</article>
+
 </div>
 </div>
 </section>
@@ -463,6 +476,17 @@ document.getElementById("downloads").innerText =
 "+" + count.toLocaleString() + " downloads";
 
 }, 30);
+
+// ===== SCRIPT PARA MOSTRAR SOMENTE OS 3 ÚLTIMOS ARTIGOS =====
+const postsContainer = document.querySelector('.posts');
+const posts = Array.from(postsContainer.children);
+const maxPosts = 3;
+
+// Esconde todos os artigos
+posts.forEach(post => post.style.display = 'none');
+
+// Mostra apenas os últimos 3
+posts.slice(-maxPosts).forEach(post => post.style.display = 'block');
 </script>
 
 </body>
