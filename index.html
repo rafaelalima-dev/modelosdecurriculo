@@ -101,10 +101,20 @@ text-decoration:none;
 font-weight:bold;
 font-size:18px;
 transition:.3s;
+display:inline-block;
+margin:6px;
 }
 
 .cta:hover{
 background:#16a34a;
+}
+
+.blog-btn{
+background:#111827;
+}
+
+.blog-btn:hover{
+background:#000;
 }
 
 /* ===== PROVA SOCIAL ===== */
@@ -256,6 +266,11 @@ color:#4f46e5;
 font-weight:bold;
 }
 
+.blog-center{
+text-align:center;
+margin-top:40px;
+}
+
 /* ===== FOOTER ===== */
 footer{
 text-align:center;
@@ -265,26 +280,6 @@ color:white;
 }
 
 </style>
-
-<!-- ===== SCHEMA ORG ===== -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Product",
- "name": "Modelos de Currículo Profissionais",
- "description": "Pacote de modelos de currículo editáveis no Canva.",
- "brand": {
-   "@type": "Brand",
-   "name": "Modelos de Currículo"
- },
- "offers": {
-   "@type": "Offer",
-   "price": "18.90",
-   "priceCurrency": "BRL",
-   "availability": "https://schema.org/InStock"
- }
-}
-</script>
 
 </head>
 
@@ -302,6 +297,7 @@ alt="Modelos de currículo profissionais editáveis no Canva">
 <a class="cta" href="https://drive.google.com/file/d/19k8FdfF9sRAQDk1_Doi3KgR5CfAZOQLA/view?usp=drivesdk" target="_blank" rel="noopener">
 ⬇ Baixar Modelos Grátis
 </a>
+
 </header>
 
 <section class="social container">
@@ -437,7 +433,6 @@ Comprar Agora
 <a href="curriculo-simples-exemplo-preenchido.html">Ler artigo →</a>
 </article>
 
-<!-- Novos artigos -->
 <article class="post">
 <h3>Como Fazer um Currículo para Primeiro Emprego</h3>
 <p>Guia completo para conquistar sua primeira oportunidade profissional em 2026.</p>
@@ -451,6 +446,11 @@ Comprar Agora
 </article>
 
 </div>
+
+<div class="blog-center">
+<a class="cta blog-btn" href="/blog/">Ver todos os artigos →</a>
+</div>
+
 </div>
 </section>
 
@@ -482,16 +482,11 @@ const postsContainer = document.querySelector('.posts');
 const posts = Array.from(postsContainer.children);
 const maxPosts = 3;
 
-// Esconde todos os artigos
 posts.forEach(post => post.style.display = 'none');
-
-// Mostra apenas os últimos 3
 posts.slice(-maxPosts).forEach(post => post.style.display = 'block');
 </script>
 
 </body>
-
 </html>
-
-
+		
 
