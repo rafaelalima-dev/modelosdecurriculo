@@ -6,41 +6,81 @@
 <priority>1.0</priority>
 </url>
 
+<url>
+<loc>https://modelosdecurriculo.online/blog/</loc>
+<priority>0.9</priority>
+</url>
+
  <url>
-    <loc>https://modelosdecurriculo.online/como-fazer-um-curriculo-2026.html</loc>
+    <loc>https://modelosdecurriculo.online/blog/como-fazer-um-curriculo-2026.html</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
    <url>
-    <loc>https://modelosdecurriculo.online/modelo-curriculo-pronto-baixar.html</loc>
+    <loc>https://modelosdecurriculo.online/blog/modelo-curriculo-pronto-baixar.html</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
    <url>
-    <loc>https://modelosdecurriculo.online/curriculo-simples-exemplo-preenchido.html</loc>
+    <loc>https://modelosdecurriculo.online/blog/curriculo-simples-exemplo-preenchido.html</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://modelosdecurriculo.online/curriculo-primeiro-emprego.html</loc>
+    <loc>https://modelosdecurriculo.online/blog/curriculo-primeiro-emprego.html</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://modelosdecurriculo.online/curriculo-sem-experiencia-profissional.html</loc>
+    <loc>https://modelosdecurriculo.online/blog/curriculo-sem-experiencia-profissional.html</loc>
     <lastmod>2026-02-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+   <url>
+    <loc>https://modelosdecurriculo.online/blog/o-que-colocar-no-objetivo-do-curriculo.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://modelosdecurriculo.online/blog/frases-prontas-para-curriculo.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://modelosdecurriculo.online/blog/erros-que-fazem-curriculo-ser-rejeitado.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://modelosdecurriculo.online/blog/como-montar-curriculo-pelo-celular.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://modelosdecurriculo.online/blog/curriculo-para-jovem-aprendiz.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
  
 </urlset>
+
 
