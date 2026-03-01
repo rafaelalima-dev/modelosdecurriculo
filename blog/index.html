@@ -15,7 +15,7 @@ content="Artigos completos sobre currículo, emprego, entrevistas e carreira pro
 
 <style>
 
-/* ===== MESMO ESTILO DA HOME ===== */
+/* ===== RESET ===== */
 *{
 margin:0;
 padding:0;
@@ -60,6 +60,11 @@ background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.05);
+transition:.2s;
+}
+
+.post:hover{
+transform:translateY(-4px);
 }
 
 .post a{
@@ -121,7 +126,7 @@ color:white;
 <script>
 
 /* =====================================
-LISTA DE ARTIGOS (ADICIONE AQUI)
+LISTA DE ARTIGOS
 ===================================== */
 
 const articles = [
@@ -154,35 +159,35 @@ link:"curriculo-primeiro-emprego.html"
 title:"Currículo Sem Experiência Profissional",
 desc:"Aprenda a montar um currículo mesmo sem experiência.",
 link:"curriculo-sem-experiencia-profissional.html"
-}
+},
 
 {
 title:"O que Colocar no Objetivo do Currículo",
 desc:"O objetivo do currículo pode atrair a atenção do recrutador.",
 link:"o-que-colocar-no-objetivo-do-curriculo.html"
-}
+},
 
 {
 title:"Frases Prontas para Currículo",
-desc:"Exemplos Profissionais para Destacar o seu Perfil.",
+desc:"Exemplos profissionais para destacar o seu perfil.",
 link:"frases-prontas-para-curriculo.html"
-}
+},
 
 {
 title:"Erros que Fazem o Currículo Ser Rejeitado",
 desc:"Veja como evitar cada um deles.",
 link:"erros-que-fazem-curriculo-ser-rejeitado.html"
-}
+},
 
 {
 title:"Como Montar Currículo Pelo Celular",
-desc:"Guia Completo Passo a Passo 2026.",
+desc:"Guia completo passo a passo 2026.",
 link:"como-montar-curriculo-pelo-celular.html"
-}
+},
 
 {
 title:"Currículo para Jovem Aprendiz",
-desc:"Guia Completo com Exemplos Prontos 2026.",
+desc:"Guia completo com exemplos prontos 2026.",
 link:"curriculo-para-jovem-aprendiz.html"
 }
 
@@ -200,18 +205,20 @@ function displayPosts(page){
 const container = document.getElementById("posts");
 container.innerHTML = "";
 
-const start = (page-1)*postsPerPage;
+const start = (page - 1) * postsPerPage;
 const end = start + postsPerPage;
 
-articles.slice(start,end).forEach(article => {
+articles.slice(start, end).forEach(article => {
 
-container.innerHTML += `
+const postHTML = `
 <article class="post">
 <h3>${article.title}</h3>
 <p>${article.desc}</p>
 <a href="${article.link}">Ler artigo →</a>
 </article>
 `;
+
+container.innerHTML += postHTML;
 
 });
 
@@ -220,15 +227,15 @@ renderPagination();
 
 function renderPagination(){
 
-const totalPages = Math.ceil(articles.length/postsPerPage);
+const totalPages = Math.ceil(articles.length / postsPerPage);
 const pagination = document.getElementById("pagination");
 
-pagination.innerHTML="";
+pagination.innerHTML = "";
 
-for(let i=1;i<=totalPages;i++){
+for(let i = 1; i <= totalPages; i++){
 
 pagination.innerHTML += `
-<button class="${i===currentPage?'active':''}"
+<button class="${i === currentPage ? 'active' : ''}"
 onclick="changePage(${i})">${i}</button>
 `;
 
@@ -238,15 +245,15 @@ onclick="changePage(${i})">${i}</button>
 function changePage(page){
 currentPage = page;
 displayPosts(page);
-window.scrollTo({top:0,behavior:"smooth"});
+window.scrollTo({top:0, behavior:"smooth"});
 }
 
+/* CARREGA AO ABRIR */
 displayPosts(currentPage);
 
 </script>
 
 </body>
-
 </html>
 
 
